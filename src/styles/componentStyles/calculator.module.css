@@ -1,0 +1,133 @@
+.wrapper{
+    background-color: #fb6935;
+    padding-bottom: 50px;
+}
+.wrapperL{
+    background-color: #f0f0f0;
+    padding-bottom: 50px;
+}
+.description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 50px;
+}
+    .textL{
+        color:black;
+    }
+    .title{
+        margin-top: 0px;
+    }
+    .accordion{
+        background-color: #1F2326 !important;
+        color:#fff !important;
+        font-size: 20px !important;
+        margin: 0px 50px !important;
+    }
+    .accordionDetails{
+        display: block !important;
+    }
+    .wrapperCalculator{
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 1fr;
+        justify-content: space-between;
+    }
+        .sliderWrapper{
+            font-size: 16px;
+            max-width: 300px;
+        }
+        .slider{
+            color:#fb6935 !important;
+        }
+            .sliderWrapper > p{
+                margin:0px;
+                margin-top:10px;
+            }
+
+    .switchWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+    }
+        .switch{
+            color: #fb6935 !important;
+        }
+        .switchTrack{
+            
+            background-color:#fb6935 !important;
+        }
+    .checkboxWrapper{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+        .checkboxTitle{
+            grid-column: 1 / 6;
+            font-size: 16px;
+        }
+    .resultWrapper{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        display: grid;
+        justify-items: center;
+        align-items:end;
+    }   
+        .resultTitle{
+            margin: 0;
+            margin-top: 8px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .UIbutton{
+            background-color: #fb6935;
+        }
+        .UIbutton:hover{
+            background-color: #ff7b00;
+        }
+    .priceInfo{
+        color:#fff;
+    }
+        .priceInfoTitle{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .priceInfoDescription{
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+@media screen and (max-width: 1100px){
+    .wrapperCalculator{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+        .checkboxWrapper{
+            grid-template-columns: 1fr;
+        }
+            .checkboxTitle{
+                grid-column: 1 / 2;
+            }
+
+    .resultWrapper{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+        .resultTitleWrapper{
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+
+}
+@media screen and (max-width: 600px){
+    .description{
+        grid-template-columns: 1fr;
+    }
+        .title{
+            font-size: 14px;
+            text-align: center;
+            margin: 20px 0px;
+        }
+        .pInDescription{
+            text-align: center;
+        }
+}   

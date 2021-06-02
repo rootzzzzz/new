@@ -1,0 +1,152 @@
+.wrapper{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px 30px 0px 0px;
+    background: #1F2326;
+    padding: 12px 0px;
+    z-index: 10;
+}
+.wrapperLight{
+    background: #f0f0f0;
+}
+    .logo{
+        margin-left: 50px;
+        font-size: 30px;
+        font-family: 'Archivo';
+        color: #1F2326;
+        cursor: pointer;
+        text-shadow: 2px 2px 0px rgb(255, 255, 255);
+        transition: .3s;
+    }
+    .logo > span{
+        color:#fb6935;
+        font-size: 42px;
+        text-shadow: none;
+        border-bottom: 1px solid transparent;
+    }
+    .logo:hover{
+        text-shadow: none;
+        color: #fff;
+    }
+    .logoLight{
+        margin-left: 50px;
+        font-size: 30px;
+        font-family: 'Archivo';
+        color: #f0f0f0;
+        cursor: pointer;
+        text-shadow: 2px 2px 0px rgb(0, 0, 0);
+        transition: .3s;
+    }
+    .logoLight > span{
+        color:#fb6935;
+        font-size: 42px;
+        text-shadow: none;
+        border-bottom: 1px solid transparent;
+    }
+    .logoLight:hover{
+        text-shadow: none;
+        color: black;
+    }
+    .rectangle{
+        margin: 0px 50px;
+        align-self: center;
+        height: 80%;
+        width: 2px;
+        background-color: #fff;
+    }
+    .rectangleLight{
+        margin: 0px 50px;
+        align-self: center;
+        height: 80%;
+        width: 2px;
+        background-color: rgb(0, 0, 0);
+    }
+    .nav{
+        display: grid;
+        color: #fff;
+        margin-left: 50px;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 20px 20px;
+        grid-gap: 10px 100px;
+    }
+        .navLight{
+            color: black !important;
+        }
+        .nav >  div > a{
+            width: 100%;
+            font-weight: 600;
+            text-decoration: none;
+            transition: .3s;
+            border-bottom: 1px solid transparent;
+        }
+        .nav > div > a:hover{
+            border-bottom: 1px solid #fff;
+        }
+        .navLight > div >a:hover {
+            border-bottom: 1px solid black;
+        }
+    .burger, .mobileNav{
+        display: none;
+    }
+
+@media screen and (max-width: 1100px) {
+    .wrapper{
+        margin: 0;
+        border-radius: 0px;
+    }
+    .circle{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+        .mobileNav{
+            transition: .3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            color: #fff;
+            top: -170px;
+            z-index: 0;
+            background: #1F2326;
+        }
+        .mobileNavLight{
+            color: black;
+            background: #f0f0f0;
+        }
+            .mobileNav >  div{
+                margin-bottom: 10px;
+                border-bottom: 1px solid #fff;
+            }
+            .mobileNav >  div > a{
+                width: 100%;
+                
+                text-decoration: none;
+                transition: .3s;
+                border-bottom: 1px solid transparent;
+            }
+            .mobileNav > div > a:hover{
+                border-bottom: 1px solid #fff;
+            }
+}
+
+@media screen and (max-width: 480px) {
+    .burger{
+        margin: 0;
+    }
+    .wrapper{
+        justify-content: space-between;
+    }
+    .rectangle{
+        display: none;
+    }
+}

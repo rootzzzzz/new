@@ -1,0 +1,137 @@
+.sliderWrappert{
+    overflow: visible;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -4px;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;;
+}
+.currentSlide{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:600px;
+    overflow: hidden;
+}
+    .arrow{
+        position: absolute;
+        -webkit-touch-callout: none; 
+        -webkit-user-select: none;   
+        -moz-user-select: none;     
+        user-select: none; 
+        pointer-events: none;
+        transition: 2s;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        position: relative;
+        display: flex;
+        margin: 0px 10px;  
+        justify-content: center;
+        align-items: flex-end;
+        color: #fff;
+        max-width: 280px;
+        height: 500px; 
+        left:720px;
+        -webkit-touch-callout: none; 
+        -webkit-user-select: none;   
+        -moz-user-select: none;     
+        user-select: none; 
+        pointer-events: none;
+        transition: .3s;
+    }
+    .card:nth-child(2n+1){
+        top: -50px;
+        background:linear-gradient(-45deg, transparent 15px, #fb6935 0);
+    }
+    .card:nth-child(2n+2){
+        top: 50px;
+        background:linear-gradient(135deg, transparent 15px, #fb6935 0);
+    }
+    .cardL{
+        position: relative;
+        display: flex;
+        margin: 0px 10px;  
+        justify-content: center;
+        align-items: flex-end;
+        color: #fff;
+        max-width: 280px;
+        height: 500px; 
+        left:720px;
+        -webkit-touch-callout: none; 
+        -webkit-user-select: none;   
+        -moz-user-select: none;     
+        user-select: none; 
+        pointer-events: none;
+        transition: .3s;
+    }
+    .cardL:nth-child(2n+1){
+        top: -50px;
+        background:linear-gradient(-45deg, transparent 15px, #fff 0);
+    }
+    .cardL:nth-child(2n+2){
+        top: 50px;
+        background:linear-gradient(135deg, transparent 15px, #fff 0);
+    }
+        .card > img {
+            -webkit-touch-callout: none; 
+            -webkit-user-select: none;   
+            -moz-user-select: none;     
+            user-select: none; 
+            pointer-events: none;
+        }
+        .trenerName{
+            min-width: 333px;
+            position: absolute;
+            align-self: flex-start;
+            left: -149px;
+            top: 150px;
+            margin: 0px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+            font-size: 72px;
+            color: transparent;
+            transform: rotate(90deg);
+        }
+        .trenerNameL{
+            min-width: 333px;
+            position: absolute;
+            align-self: flex-start;
+            left: -149px;
+            top: 150px;
+            margin: 0px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            font-size: 72px;
+            color: transparent;
+            transform: rotate(90deg);
+        }
+
+@media screen and (max-width: 1100px){
+    .card{
+        left:820px;
+    }
+    .cardL{
+        left:820px;
+    }
+}
+@media screen and (max-width: 720px){
+    .card{
+        left:460px;
+    }
+    .cardL{
+        left:820px;
+    }
+}
+@media screen and (max-width: 480px){
+    .card{
+        left:220px;
+    }
+    .cardL{
+        left:820px;
+    }
+}

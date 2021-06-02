@@ -1,0 +1,46 @@
+.wrapper{
+    width: 100%;
+    background-color: #1F2326;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+    .info{
+        margin-left: 60px;
+    }
+        .title{
+            color:#fff;
+            font-weight: 500;
+            font-size: 24px;
+            max-width: 500px;
+        }
+        .lightText{
+            color:black !important;
+        }
+        .lightBack{
+            background-color: #f0f0f0 !important;
+        }
+        .description{
+            color:#fff;
+            line-height: 26px;
+            font-weight: 500;
+            box-sizing: border-box;
+            margin-top: 20px;
+            padding-left: 20px;
+            padding-right: 10px;
+            max-width: 500px;
+        }
+@media screen and (max-width: 1100px) {
+    .wrapper{
+        display: grid;
+    }
+    .title{
+        margin: auto;
+        margin-top: 20px;
+
+    }
+    .description{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}

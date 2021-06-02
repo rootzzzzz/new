@@ -1,0 +1,52 @@
+.sliderWripper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container{
+    transition: .3s;
+    display: flex;
+    overflow:visible;
+}
+.arrow{
+    position: absolute;
+    width: 100px;
+    min-height: 100%;
+    right: 0px;
+    background-color: rgba(124, 124, 124, 0.6);
+    backdrop-filter: blur(5px);
+    z-index:1;
+    font-size: 52px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.counter{
+    position: absolute;
+    top:50px;
+    left:50px;
+    z-index: 1;
+    color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    background-color: rgba(39, 39, 39, 0.6);
+    backdrop-filter: blur(5px);
+}
+@media screen and (max-width: 480px){
+    .counter{
+        top:20px;
+        left:20px;
+        font-size: 14;
+    }
+    .arrow{
+        width:30px;
+        font-size: 20px;
+    }
+}

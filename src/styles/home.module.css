@@ -1,0 +1,52 @@
+.body{
+    background-color: #24272e;
+}
+.root{
+    font-family: 'Montserrat';
+    max-width: 1400px;
+    margin: auto;
+    color: black !important;
+    /*  */
+}
+a{
+    color:inherit;
+}
+.schedule{
+    background-color: #1F2326;
+    padding: 20px 100px;
+}
+.scheduleL{
+    background-color: #f0f0f0;
+    padding: 20px 100px;
+}
+.scheduleTitle{
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color:#fff;
+}
+.scheduleTitleL{
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color:black;
+}
+.form{
+    background-color: #1F2326;
+}
+.formL{
+    background-color: #f0f0f0 ;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .schedule{
+        padding: 60px 0px;
+    }
+    .scheduleTitle{
+        font-size:18px;
+    }
+}
+
